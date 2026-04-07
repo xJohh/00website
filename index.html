@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josha Helmchen | Architecture Portfolio</title>
+  <meta name="description" content="Architecture portfolio of Josha Helmchen. Exploring Research, Teaching, and Computational design with focus on digital fabrication and resource-driven circular construction.">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Josha Helmchen | Architecture Portfolio">
+  <meta property="og:description" content="Exploring Research, Teaching, and Computational Design at Bauhaus-Universität Weimar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joshahelmchen.com">
+  <meta property="og:image" content="Portfolio_Content/einz-2023-2025/cover.webp">
+  
+  <!-- Performance Hints -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="sr-only">Josha Helmchen Portfolio - Architecture & Digital Design</h1>
+
+  <header class="header">
+    <div class="header-left" id="home-link">Josha Helmchen</div>
+    <nav class="header-center">
+      <a href="#" data-filter="All" class="active">All</a>
+      <a href="#" data-filter="Research">Research</a>
+      <a href="#" data-filter="Teaching">Teaching</a>
+      <a href="#" data-filter="Computational">Computational</a>
+    </nav>
+    <div class="header-right">
+      <a href="#" id="cv-link">CV / Contact</a>
+    </div>
+  </header>
+
+
+  <main class="grid-container" id="projectGrid" data-zoom="3">
+    <!-- Dynamic items injected here -->
+  </main>
+
+  <section id="cv-section" class="cv-container" style="display: none;">
+    <div class="cv-content" id="cv-content-body"></div>
+  </section>
+
+  <!-- Project Modal Overlay -->
+  <div id="projectModal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <!-- Impressum Modal -->
+  <div id="impressumModal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="close-btn" id="close-impressum" aria-label="Close modal">&times;</button>
+      <div class="modal-inner-content">
+        <h2 class="modal-header">Impressum (Legal Notice)</h2>
+        <div class="modal-text">
+          <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+          <p>
+            Josha Helmchen<br>
+            [YOUR STREET]<br>
+            [YOUR ZIP & CITY]<br>
+          </p>
+          <p><strong>Kontakt:</strong></p>
+          <p>
+            Email: josha.helmchen@uni-weimar.de<br>
+          </p>
+          <p><strong>Design & Development:</strong></p>
+          <p>Josha Helmchen</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <button id="impressum-link" class="footer-link">Impressum / Legal</button>
+  </footer>
+
+  <script src="projects.js"></script>
+  <!-- Lightweight markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
